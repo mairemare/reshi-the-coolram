@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>About Reshiiiram</title>
+    <title>Studio Mahika - About Reshiiiram</title>
     <head>
         <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
@@ -8,14 +8,10 @@
         <style>
             /*parent/main containers*/
             .flex-container{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                align-content: center;
+                display: flex; flex-direction: row; justify-content: space-around; align-items: center; align-content: center;
             }
+
             .flex-container div{
-                background-color: oklch(0% 0 0);
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-evenly;
@@ -28,7 +24,7 @@
                 text-align: center;
             }
 
-            /*extra containers*/
+            /*inner containers*/
             .container{
                 display: flex;
                 flex-direction: column;
@@ -37,8 +33,7 @@
                 align-content: center;
             }
             .container div{
-                background-color: #00e5ff;
-                flex-direction: row;
+                flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
                 width: 70%;
@@ -48,143 +43,206 @@
                 border-radius: 25px;
                 align-content: center;
                 text-align: center;
+                border-color: aliceblue;
+                border-width: 5px solid;
+                background-color: hwb(215 27% 35% / 0.302);
+            }    
+
+            .row-container {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+                
+
+            /*horizontal-scroll*/
+            #hoohoo {
+                border: 1px solid #ffffff;
+                white-space: nowrap;
+                overflow-x: auto;
+                padding: .5em;
+                box-sizing: border-box;
+                height: 10em;
+                overflow-y: hidden;
+            }
+            .lala {
+                width: 10em;
+                overflow-y:scroll;
+                overflow-x:hidden;
+                border: 1px solid #ffffff;
+                white-space: normal;
+                display: inline-block;
+                height: 90%;
+                padding: .3em;
+                vertical-align: middle;
             }
 
             /*buttons*/
             .button{
-                border: none;
-                color: hsl(0, 0%, 0%);
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
+                box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey,
+                inset 2px 0px #dfdfdf;
+                border-radius: 0px;
+                background: #c9c9c9;
                 display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                width: 70%;
-                cursor: pointer;
-                border-radius: 20px;
-                font-family: Sans-serif
+                width: auto;
+                text-decoration: none;
+                padding: 5px;
+                line-height: 1;
+                font-family: ms-sans-serif;
+                }
+
+                @font-face {
+                font-family: ms-sans-serif;
+                src: url(https://dl.dropbox.com/s/ngpec1t1x4ceksb/ms-sans-serif.ttf);
             }
             .button1 {background-color: hsl(202, 100%, 63%)} /* About Me */
             .button2 {background-color: hsl(202, 100%, 63%)} /* Projects */
-            .button3 {background-color: hsl(202, 100%, 63%)} /* Blog */
+            .button3 {background-color: hsl(202, 100%, 63%)} /* Updates */
             .button4 {background-color: hsl(202, 100%, 63%)} /* Back to Top */
    
+
             /*text*/
             h1{
-                font-family: Helvetica; font-size: 45px; text-align: center;
+                font-family: Helvetica; font-size: 45px; text-align: center; color:aliceblue
             }
             h2{
-                font-family: Helvetica; font-size: 30px; text-align: center;
+                font-family: Helvetica; font-size: 30px; text-align: center; color:aliceblue
             }
             h3{
-                font-family: Helvetica; font-size: 25px; text-align: left;
+                font-family: Helvetica; font-size: 25px; text-align: left; color: aliceblue
             }
            p{
-                font-family: comic sans ms; font-size: 18px; text-align: left;
+                font-family: comic sans ms; font-size: 18px; text-align: left; color: aliceblue;
             }
             ul{
-                font-family: comic sans ms; font-size: 18px; text-align: left;
+                font-family: comic sans ms; font-size: 18px; text-align: left; color: aliceblue;
             }
 
-
             body{
+                align-items: center;
+                align-content: center;
+                justify-content: center;
                 background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTdrNDdwbmw3ZHliNnFmNmt6dHEwM2Jja2FjMjBjZXo4aTBldnplYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FlodpfQUBSp20/giphy.gif"); background-attachment: fixed;
             }
 
 
         </style>
+
     </head>
 
     <body>
 
-        <header>
-            <div class="container">
-                <div>
-                    <h1>Meet Reshii!</h1>
-                </div>
-        </header>
-
-        <div class="flex-container">
-
             
-            <div class="flex-container"> 
+            <div class="row-container">
 
                 <div id="nav-buttons">
-
-                    <a href="#about">
-                        <button class="button button1">About Me</button>
-                    </a>
-                    <p></p>
-                    <a href="#projects">
-                        <button class="button button2">Projects</button>                        
-                    </a>
-                    <p></p>
-                    <a href="#blog">
-                        <button class="button button3">Blog</button>
-                    </a>
-
+                        <div>
+                        <a href="#about">
+                            <button class="button button1">About Me</button>
+                        </a>
+                        </div>
+                        <p></p>
+                        <a href="#projects">
+                            <button class="button button2">Projects</button>                        
+                        </a>
+                        <p></p>
+                        <a href="#updates">
+                            <button class="button button3">Updates</button>
+                        </a>
                 </div>
 
-                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG1iMXlldXFtbXN3Njg0MGdpdDM4aWxyN3JxMThhOXNzZDZibTVvZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/jRrbtBwb8yNXUhNS5x/giphy.gif" alt="reshiram" width="50%" height="50%">
             </div>
+    
+
+
+        <section id="about">
+
+                <div class="container">
+                    <div>
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTRkdjl0YWtjYmZ2Y3hjeTc3aTR5aTVwZWNrdDE1ZGYzNXNwb2VqNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10Ua7rs9fxa8QE/giphy.gif" alt="water" width="100%" height="70px">
+                        <h2>About Me</h2>
+                        <h3>Who's Reshiii?</h3>
+                        <p>I'm a game developer and designer. I've written several games and have drawn many concept arts. I started out coding in 2024 using MIT App Inventor, Scratch, and TinkerCAD. Most of my work is done using block coding and now I'm looking forward to learn text coding. I hope to learn Python, Java, and releasing my own games in the future.</p>
+                        <h3>My Hobbies</h3>
+                            <ul>
+                                <li>Gaming</li>
+                                <li>Drawing fanarts</li>
+                                <li>Programming</li>
+                                <li>Doomscrolling</li>
+                                <li>Birdwatching/photography</li>
+                                </ul>
+
+                        <h3>Favorite Things</h3>
+                            <ul>
+                                <li>Minecraft</li>
+                                <li>Collecting small trinkets</li>
+                                <li>Music (especially olivia rodrigo)</li>
+                                <li>collecting classic books</li>
+                                <li>birds</li>
+                            </ul>
+                        <p></p>
+
+                        <button class="button button4" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button>
+                    </div>
+                </div>
+                       
+        </section>
+
+
+
+        <section id="projects">
+                <div class="container">
+                    <div>
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3Y4OTU3bzFuNXAyOW01YXR6aDdudWhoeDk5bW0xbXNkMTlqZXFrZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AtK6cr1n21uY8/giphy.gif" alt="night sky" width="100%" height="70px">
+                        <h2>Projects</h2>
+                        <p></p>
+                        <h3>BBApp</h3>
+                        <p>Navigation app made for my hometown. This was made using MIT App Inventor. This was my first coding project for a school science competition. Me and my team created and designed this incredible navigation app with limited resources and code. It won first place at the sci fair.
+                            <div id="hoohoo">
+                                <div class="lala">
+                                    <img src="homepage.png" alt="homepage" height="100%" width="100%">
+                                </div>
+                                <div class="lala">
+                                    <img src="emergency.png" alt="emergency" height="100%" width="100%">
+                                </div>
+                                <div class="lala">
+                                    <img src="map.png" alt="map" height="100%" width="100%">
+                                </div>
+                            </div>     
+                        <p></p>
+                        <h3>Library of Halcyon</h3>
+                        <p>This started out as a small project </p>
+                            <div id="hoohoo">
+                                <div class="lala">
+                                    <img src="homepage.png" alt="homepage" height="100%" width="100%">
+                                </div>
+                                <div class="lala">
+                                    <img src="emergency.png" alt="emergency" height="100%" width="100%">
+                                </div>
+                                <div class="lala">
+                                    <img src="map.png" alt="map" height="100%" width="100%">
+                                </div>
+                            </div>    
+                        <button class="button button4" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button> 
+                    </div>
+                </div>
+        </section>
+
+
+
+            <section id="updates">
+                <div class="container">
+                    <div>
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3Y4OTU3bzFuNXAyOW01YXR6aDdudWhoeDk5bW0xbXNkMTlqZXFrZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AtK6cr1n21uY8/giphy.gif" alt="night sky" width="100%" height="70px">
+                        <h2>Updates</h2>
+                        <p>Here are some of my blog posts:</p>
+                        <button class="button button4" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button>
+                    </div>
+                </div>
+            </section>
+
 
         </div>
-
-
-        <section id="about"> /*about me section*/
-            <div class="container">
-                <div>
-                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTRkdjl0YWtjYmZ2Y3hjeTc3aTR5aTVwZWNrdDE1ZGYzNXNwb2VqNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10Ua7rs9fxa8QE/giphy.gif" alt="water" width="100%" height="70px">
-                    <h2>About Me</h2>
-                    <h3>Who's Reshiii?</h3>
-                    <p>I'm a game developer and designer. I've written several games and have drawn many concept arts. I started out coding in 2024 using MIT App Inventor, Scratch, and TinkerCAD. Most of my work is done using block coding and now I'm looking forward to learn text coding. I hope to learn Python, Java, and releasing my own games in the future.</p>
-                    <h3>My Hobbies</h3>
-                    <ul>
-                        <li>Gaming</li>
-                        <li>Drawing fanarts</li>
-                        <li>Programming</li>
-                        <li>Reading and Writing</li>
-                        <li>Doomscrolling</li>
-                        <li>Birdwatching/photography</li>
-                    </ul>
-                    <h3>Favorite Things</h3>
-                    <ul>
-                        <li>Minecraft</li>
-                        <li>Collecting small trinkets</li>
-                        <li>Music (especially olivia rodrigo)</li>
-                        <li>collecting classic books</li>
-                        <li>birds</li>
-                    </ul>
-                    <button class="button button4" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button>
-
-                </div>
-            </div>
-
-        
-        </section>
-        <section id="projects"> /*projects section*/
-            <div class="container">
-                <div>
-                    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3Y4OTU3bzFuNXAyOW01YXR6aDdudWhoeDk5bW0xbXNkMTlqZXFrZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AtK6cr1n21uY8/giphy.gif" alt="night sky" width="100%" height="70px">
-                    <h2>Projects</h2>
-                    <p>Here are some of my projects:</p>
-                    <button class="button button4" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="blog"> /*blog section*/
-            <div class="container">
-                <div>
-                    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3Y4OTU3bzFuNXAyOW01YXR6aDdudWhoeDk5bW0xbXNkMTlqZXFrZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AtK6cr1n21uY8/giphy.gif" alt="night sky" width="100%" height="70px">
-                    <h2>Blog</h2>
-                    <p>Here are some of my blog posts:</p>
-                    <button class="button button4" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button>
-                </div>
-            </div>
-        </section>
-
 
     </body>
 
