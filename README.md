@@ -7,7 +7,7 @@ Hello! It's <b>Reshi</b> and if you're reading this: <b>welcome to my website!</
 In here, you'll learn all about me, my works, and other stuff like game updates and such. Basically a portfolio.
 
 Ok so how does this website work?
-click on this link:
+click on this link: <a href= "https://mairemare.github.io/reshi-the-coolram/">to reshi</a>
 
 
 <p></p>
