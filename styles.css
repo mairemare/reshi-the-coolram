@@ -12,7 +12,7 @@
 
             /*parent/main containers*/
             .v-container{
-                display: flex; flex-direction: column; justify-content: space-around; align-items: center; align-content: center; width: 95%;
+                display: flex; flex-direction: column; justify-content: center; align-items: center; align-content: center; width: 95%;
             }
 
             .v-container div{
@@ -21,7 +21,7 @@
                 justify-content: space-evenly;
                 width: 100%;
                 margin: 10px;
-                padding: 20px;
+                padding: 10px;
                 font-size: 30px;
                 border-radius: 25px;
                 align-content: center;
@@ -30,18 +30,17 @@
 
 
             .h-container{
-                display: flex; flex-direction: column; justify-content: space-around; align-items: center; align-content: center; width: 95%;
+                display: flex; flex-direction: row; justify-content: space-around; align-items: center; align-content: center; width: 95%;
             }
 
             .h-container div{
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
                 justify-content: space-evenly;
                 width: 100%;
                 margin: 10px;
                 padding: 20px;
                 font-size: 30px;
-                border-radius: 25px;
                 align-content: center;
                 text-align: center;
             }
@@ -71,7 +70,7 @@
             .container{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 align-items: center;
                 align-content: center;
             }
@@ -80,7 +79,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                margin: 10px;
+                margin: 5px;
                 font-size: 30px;
                 align-content: center;
                 text-align: center;
@@ -110,7 +109,7 @@
                 box-sizing: border-box;
                 height: 10em 50%;
                 overflow-y: hidden;
-                width: 95%;
+                width: 90%;
 
             }
             .lala {
@@ -122,6 +121,8 @@
                 display: inline-block;
                 padding: .3em;
                 vertical-align: middle;
+                height: 100%;
+                max-height: 100%;
             }
             
             /*buttons*/
@@ -169,12 +170,14 @@
                 justify-content: center;
                 align-items: center;
                 align-content: center;
+                min-width: 50%;
+                overscroll-behavior-x: none;
                 background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTdrNDdwbmw3ZHliNnFmNmt6dHEwM2Jja2FjMjBjZXo4aTBldnplYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FlodpfQUBSp20/giphy.gif"); background-attachment: fixed;
             }
 
             .header{
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
                 text-align: center;
                 overscroll-behavior-block: auto;
