@@ -70,7 +70,7 @@
             .container{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
+                justify-content: center;
                 align-items: center;
                 align-content: center;
             }
@@ -121,7 +121,7 @@
                 display: inline-block;
                 padding: .3em;
                 vertical-align: middle;
-                height: 100%;
+                height: auto;
                 max-height: 100%;
             }
             
@@ -162,15 +162,12 @@
            p{
                 font-family: 'ms-sans-serif'; font-size: 18px; text-align: left; color: aliceblue;
             }
-            ul{
-                font-family: 'ms-sans-serif'; font-size: 18px; text-align: left; color: aliceblue;
-            }
 
             body{
                 justify-content: center;
                 align-items: center;
                 align-content: center;
-                min-width: 50%;
+                min-width: auto;
                 overscroll-behavior-x: none;
                 background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTdrNDdwbmw3ZHliNnFmNmt6dHEwM2Jja2FjMjBjZXo4aTBldnplYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FlodpfQUBSp20/giphy.gif"); background-attachment: fixed;
             }
