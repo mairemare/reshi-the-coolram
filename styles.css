@@ -107,7 +107,7 @@
                 overflow-x: auto;
                 padding: .5em;
                 box-sizing: border-box;
-                height: 10em 50%;
+                height: auto;
                 overflow-y: hidden;
                 width: 90%;
 
@@ -121,7 +121,7 @@
                 display: inline-block;
                 padding: .3em;
                 vertical-align: middle;
-                height: auto;
+                height: 70%;
                 max-height: 100%;
             }
             

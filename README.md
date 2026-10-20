@@ -13,22 +13,19 @@ click on this link:
 <p></p>
 Time to show you around!
 
-On the main menu, you'll see three buttons:
+On the homepage, there are three sections:
 
-<h1>> About me:</h1> 
-    A section where you'll learn all about me, my hobbies, and what's in my inventory!
+<h1>> About me</h1> 
+    A section where you'll learn all about me and what's in my inventory!
 
 <p></p>
 
-<h1>> Projects:</h1>
-This is where you'll see all my projects (past, present, and future--- yes, future).
+<h1>> Projects and Hobbies</h1>
+    Click on the items on the shelf to learn more about my hobbies or my socials.
 
 <p></p>
 <h1>> Updates:</h1>
 Stay up to date about my projects.
-
-<p></p>
-<b>Wanna go to other sections? click the "Back to Top" button.</b>
 
 <p></p>
 <img src="Resources.png">
@@ -50,6 +47,8 @@ Stay up to date about my projects.
 <a href= "https://codepen.io/Liton-Kumar-Dey/pen/VYvjqMm?anon=true&view=pen>">Minecraft font</a>
 
 <a href= "giphy.com">Giphy.com</a>
+
+<a href="https://www.fla-shop.com/image-map/">Image Map Coordinates Generator</a>
 
 
 
