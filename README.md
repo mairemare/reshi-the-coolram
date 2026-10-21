@@ -24,6 +24,16 @@ On the homepage, there are three sections:
     Click on the items on the shelf to learn more about my hobbies or my socials.
 
 <p></p>
+
+>Click on the music bottle to go to my soundcloud
+
+>Click on the art mug to look at my art
+
+>Click on the game controller to go to my itch.io website!
+
+>Click on the play button bottle to go to my Youtube channel
+
+<p></p>
 <h1>> Updates:</h1>
 Stay up to date about my projects.
 
