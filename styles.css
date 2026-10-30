@@ -110,6 +110,7 @@
                 height: auto;
                 overflow-y: hidden;
                 width: 90%;
+                color: rgb(0, 0, 0);
 
             }
             .lala {
@@ -121,8 +122,11 @@
                 display: inline-block;
                 padding: .3em;
                 vertical-align: middle;
-                height: 70%;
+                height: 323px;
                 max-height: 100%;
+                width:210px;
+                max-width: 100%;
+                color: rgb(0, 0, 0);
             }
             
             /*buttons*/
@@ -173,20 +177,19 @@
             }
 
             .header{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                overscroll-behavior-block: auto;
+                display: flex; flex-direction: column; justify-content: center; align-items: center; align-content: center; width: 95%; color:#0a0a0a
             }
+
             .header div{
                 flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
                 width: 100%;
                 margin: 10px;
-                padding: 20px;
+                padding: 10px;
+                font-size: 30px;
                 border-radius: 25px;
+                align-content: center;
                 text-align: center;
-
-            }   
-
-            
+                color: #0a0a0a;
+            }
